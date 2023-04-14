@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <ol>
+            <li>asdf</li>
+            <li>asdf</li>
+            <li>asdf</li>
+        </ol>
+        <ul>
+            <li class="active">asdf</li>
+            <li class="active">asdf</li>
+            <li>asdf</li>
+        </ul>
+        <script>
+            var li = document.querySelectorAll('li');
+            console.log(li);
+            for (var i=0; i < li.length; i++) {
+                li[i].style.color = "red";
+            }
+            
+            var lis = document.querySelectorAll('ul li');
+            for (var i in lis) {
+                lis[i].style.color = 'blue';
+            }
+            
+        </script>
+    </body>
+</html>
